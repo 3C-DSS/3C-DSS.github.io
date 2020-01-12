@@ -1,0 +1,326 @@
+.containerr {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 8vh 6vh;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "s1  s1  s1  s1  s1  s3  s3  s3  s3  s4" 
+	"s1  s1  s1  s1  s1  s3  s3  s3  s3  s4" 
+	"s1  s1  s1  s1  s1  s6  s6  s6  s8  s8" 
+	"s2  s2  s2  s5  s5  s6  s6  s6  s9  s9" 
+	"s2  s2  s2  s5  s5  s7  s7  s7  s10 s10" 
+	"s12 s12 s12 s16 s16 s7  s7  s7  s11 s11" 
+	"s12 s12 s12 s16 s16 s23 s23 s23 s21 s21"
+	"s13 s13 s13 s17 s17 s23 s23 s23 s22 s22"
+	"s13 s13 s13 s18 s18 s27 s27 s24 s24 s20"
+	/*"s14 s14 s15 s15 s26 s26 s25 s25 s19 s28"*/
+}
+
+.s1 {
+  grid-area: s1;
+}
+
+.s1>img {
+  object-fit: cover;
+  width: 70%;
+  height: 70%;
+}
+
+.s2 {
+  grid-area: s2;
+  position: relative; 
+  display: inline-block;
+}
+
+.s2>img {
+  object-fit: cover;
+  width: 70%;
+  height: 100%;
+  opacity: 0.4
+}
+
+.s3 {
+  grid-area: s3;
+}
+
+.s3>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s4 {
+  grid-area: s4;
+}
+
+.s4>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s5 {
+  grid-area: s5;
+}
+
+.s5>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s6 {
+  grid-area: s6;
+}
+
+.s6>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s7 {
+  grid-area: s7;
+}
+
+.s7>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s8 {
+  grid-area: s8;
+}
+
+.s8>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s9 {
+  grid-area: s9;
+}
+
+.s9>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s10 {
+  grid-area: s10;
+}
+
+.s10>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s11 {
+  grid-area: s11;
+}
+
+.s11>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s12 {
+  grid-area: s12;
+}
+
+.s12>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s13 {
+  grid-area: s13;
+}
+
+.s13>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s14 {
+  grid-area: s14;
+}
+
+.s14>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s15 {
+  grid-area: s15;
+}
+
+.s15>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s16 {
+  grid-area: s16;
+}
+
+.s16>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s17 {
+  grid-area: s17;
+}
+
+.s17>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s18 {
+  grid-area: s18;
+}
+
+.s18>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s19 {
+  grid-area: s19;
+}
+
+.s19>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s20 {
+  grid-area: s20;
+}
+
+.s20>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s21 {
+  grid-area: s21;
+}
+
+.s21>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s22 {
+  grid-area: s22;
+}
+
+.s22>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s23 {
+  grid-area: s23;
+}
+
+.s23>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s24 {
+  grid-area: s24;
+}
+
+.s24>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s25 {
+  grid-area: s25;
+}
+
+.s25>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s26 {
+  grid-area: s26;
+}
+
+.s26>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s27 {
+  grid-area: s27;
+}
+
+.s27>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
+
+.s28 {
+  grid-area: s28;
+}
+
+.s28>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.4
+}
