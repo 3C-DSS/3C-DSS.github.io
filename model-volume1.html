@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
- <!--<![endif]-->
+<!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,30 +22,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
-	<link rel="stylesheet" href="./index_files/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
-	
-<link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<link href="vendors/nprogress/nprogress.css" rel="stylesheet">
-<link href="build/css/custom.min.css" rel="stylesheet">
-<script src="Chart.min.js"></script>
-<script src="utils.js"></script>
-<script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js" type="5741ea946bdc5fcff66b026d-text/javascript"></script>
-<script src="vendors/fastclick/lib/fastclick.js" type="5741ea946bdc5fcff66b026d-text/javascript"></script>
-<script src="vendors/nprogress/nprogress.js" type="5741ea946bdc5fcff66b026d-text/javascript"></script>
-<script src="vendors/Chart.js/dist/Chart.min.js" type="5741ea946bdc5fcff66b026d-text/javascript"></script>
-<script src="build/js/custom.min.js" type="5741ea946bdc5fcff66b026d-text/javascript"></script>
-<script src="ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="5741ea946bdc5fcff66b026d-|49" defer=""></script>
-
+    <link href="index_files/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weathers-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
-
+    <link href="gentelella-master/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
     <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            width: !important;
+        }
+
+        .myTooltip {
+            width: 1000px;
+        }
+
+
+        .my-custom-scrollbar {
+            position: relative;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .table-wrapper-scroll-y {
+            display: flex;
+        }
+
         #weatherWidget .currentDesc {
             color: #ffffff !important;
         }
@@ -86,26 +97,11 @@
         #cellPaiChart {
             height: 160px;
         }
-		
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            width: !important;
-        }
-
-        .myTooltip {
-            width: 1000px;
-        }
-		
-		canvas {
-			-moz-user-select: none;
-			-webkit-user-select: none;
-			-ms-user-select: none;
-		}
     </style>
 </head>
 
 <body>
+
     <!-- Right Panel -->
     <div class="" id="home">
         <!-- Header-->
@@ -130,7 +126,7 @@
                     </div>
                     <div class=" user-area float-left " style="padding-top:15px; color:white"> Hello Star    Lee,</div>
                 </div>
-               
+
             </div>
             <div class="top-right">
                 <div class="header-menu">
@@ -208,7 +204,7 @@
                         </div>
                     </div>
 
-                    
+
 
                 </div>
             </div>
@@ -294,104 +290,76 @@
                 </div>
 
                 <div class="clearfix"></div>
-               <!--Shoes-->
-			   
-			   
-
+                <!--Shoes-->
                 <div class="row">
                     <!--Shoes-->
                     <div class="col-lg-6">
-						
-                        <div class="card" style="height:500px">
-						
-						<div class="card-header" style="text-align:center">
 
-                        <strong class="card-title">
-										
-                                                    <div id="myTooltip" data-toggle="tooltip">Model Volume</div>
-                                               
-						</strong>           
-								
-                        </div>
-						
-							<div class="container">
-							    <div class="s1 shadow" style="shadow"><a href="model-volume1.html"><img src="index_files/1_.png"></a></div>
-								<div class="s2" style="opacity: 0.4"><a href="model-volume2.html"><img src="index_files/2.png"></a></div>
-								<div class="s3" style="opacity: 0.4"><a href="model-volume3.html"><img src="index_files/3.png"></a></div>
-								<div class="s4"><img src="index_files/4.png"></div>
-								<div class="s5"><img src="index_files/5.png"></div>
-								<div class="s6"><img src="index_files/6.png"></div>
-								<div class="s7"><img src="index_files/7.png"></div>
-								<div class="s8"><img src="index_files/8.png"></div>
-								<div class="s9"><img src="index_files/9.png"></div>
-								<div class="s10"><img src="index_files/10.png"></div>
-								<div class="s11"><img src="index_files/11.png"></div>
-								<div class="s12" style="opacity: 0.4"><a href="model-volume12.html"><img src="index_files/12.png"></a></div>
-								<div class="s13"><img src="index_files/13.png"></div>
-								<!--<div class="s14"><img src="index_files/14.png"></div>-->
-								<!--<div class="s15"><img src="index_files/15.png"></div>-->
-								<div class="s16"><img src="index_files/16.png"></div>
-								<div class="s17"><img src="index_files/17.png"></div>
-								<div class="s18"><img src="index_files/18.png"></div>
-								<!--<div class="s19"><img src="index_files/19.png"></div>-->
-								<div class="s20"><img src="index_files/20.png"></div>
-								<div class="s21"><img src="index_files/21.png"></div>
-								<div class="s22"><img src="index_files/22.png"></div>
-								<div class="s23"><img src="index_files/23.png"></div>
-								<div class="s24"><img src="index_files/24.png"></div>
-								<!--<div class="s25"><img src="index_files/25.png"></div>-->
-								<!--<div class="s26"><img src="index_files/26.png"></div>-->
-								<div class="s27"><img src="index_files/27.png"></div>
-								<!--<div class="s28"><img src="index_files/28.png"></div>-->
-							</div>
+                        <div class="card" style="height:500px">
+
+                            <div class="card-header" style="text-align:center;background-color:#404040; color:white">
+
+                                <strong class="card-title">
+                                    Worker Capability Tracking
+                                </strong>
+
+                            </div>
+                            <div class="card-body">
+                                <div class="containerr">
+                                    <div class="s1 shadow" style="shadow"><a href="model-volume1.html"><img src="index_files/1_.png"></a></div>
+                                    <div class="s2" style="opacity: 0.4"><a href="model-volume2.html"><img src="index_files/2.png"></a></div>
+                                    <div class="s3" style="opacity: 0.4"><a href="model-volume3.html"><img src="index_files/3.png"></a></div>
+                                    <div class="s4"><img src="index_files/4.png"></div>
+                                    <div class="s5"><img src="index_files/5.png"></div>
+                                    <div class="s6"><img src="index_files/6.png"></div>
+                                    <div class="s7"><img src="index_files/7.png"></div>
+                                    <div class="s8"><img src="index_files/8.png"></div>
+                                    <div class="s9"><img src="index_files/9.png"></div>
+                                    <div class="s10"><img src="index_files/10.png"></div>
+                                    <div class="s11"><img src="index_files/11.png"></div>
+                                    <div class="s12" style="opacity: 0.4"><a href="model-volume12.html"><img src="index_files/12.png"></a></div>
+                                    <div class="s13"><img src="index_files/13.png"></div>
+									<!--<div class="s14"><img src="index_files/14.png"></div>-->
+									<!--<div class="s15"><img src="index_files/15.png"></div>-->
+									<div class="s16"><img src="index_files/16.png"></div>
+									<div class="s17"><img src="index_files/17.png"></div>
+									<!--<div class="s18"><img src="index_files/18.png"></div>-->
+									<!--<div class="s19"><img src="index_files/19.png"></div>-->
+									<div class="s20"><img src="index_files/20.png"></div>
+									<div class="s21"><img src="index_files/21.png"></div>
+									<div class="s22"><img src="index_files/22.png"></div>
+									<div class="s23"><img src="index_files/23.png"></div>
+									<!--<div class="s24"><img src="index_files/24.png"></div>-->
+									<!--<div class="s25"><img src="index_files/25.png"></div>-->
+									<!--<div class="s26"><img src="index_files/26.png"></div>-->
+									<!--<div class="s27"><img src="index_files/27.png"></div>-->
+									<!--<div class="s28"><img src="index_files/28.png"></div>-->
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!--/Shoes-->
                     <!--chart-->
                     <div class="col-lg-6">
-                        <div class="card"style="height:500px">
-                            <div class="card-body">
-                                <h4 class="box-title">Traffic </h4>
+                        <div class="card" style="height:500px">
+                            <div class="card-header" style="text-align:center; background-color:#404040; color:white">
+                                <strong class="card-title">
+                                    Worker Capability Tracking
+                                </strong>
+
                             </div>
                             <div class="row">
                                 <div class="col-lg-8">
                                     <div class="card-body">
                                         <!-- <canvas id="TrafficChart"></canvas>   -->
-                                        <div id="traffic-chart" class="traffic-chart"></div>
+                                        <div id="echart_scatter" style="height:400px; width:650px">
+                                            <!-- /.card-body -->
+
+                                        </div>
+                                        <div class="col-8" style="  margin-left: 510px;    margin-bottom: 100px; margin-top: -30px; float: left;color:dimgrey">Efficiency%</div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="card-body">
-                                        <div class="progress-box progress-1">
-                                            <h4 class="por-title">Visits</h4>
-                                            <div class="por-txt">96,930 Users (40%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-box progress-2">
-                                            <h4 class="por-title">Bounce Rate</h4>
-                                            <div class="por-txt">3,220 Users (24%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-box progress-2">
-                                            <h4 class="por-title">Unique Visitors</h4>
-                                            <div class="por-txt">29,658 Users (60%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-box progress-2">
-                                            <h4 class="por-title">Targeted  Visitors</h4>
-                                            <div class="por-txt">99,658 Users (90%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div> <!-- /.card-body -->
-                                </div>
+
                             </div> <!-- /.row -->
                             <div class="card-body"></div>
                         </div>
@@ -401,17 +369,17 @@
                 <div class="row">
                     <!--employees-->
                     <div class="col-lg-6">
-                        <div class="card" style="height:500px">
-                            <div class="card-header" style="text-align:center">
+                        <div class="card" style="height:700px">
+                            <div class="card-header" style="text-align:center;background-color:#404040; color:white">
                                 <strong class="card-title">
                                     Worker Capability Tracking
                                 </strong>
                                 <button type="button" class="btn btn-warning btn-sm" style="background-color:yellow; border-color:yellow"><i class="fa fa-map-marker"></i>&nbsp; 2A</button>
-                                 
-                             
+
+
                             </div>
-                            <div class="table-stats order-table ov-h">
-                                <table class="table ">
+                            <div class="table-stats order-table ov-h table-wrapper-scroll-y my-custom-scrollbar">
+                                <table id="dtVerticalScrollExample" class="table bootstrap-data-table ">
 
                                     <thead style="text-align:center">
                                         <tr>
@@ -419,7 +387,7 @@
                                             <th style="vertical-align:central">Avatar</th>
                                             <th style="vertical-align:central">Name</th>
                                             <th style="vertical-align:central">Experience Year</th>
-                                            <th style="vertical-align:central">Experience  (Newbie to Master)</th>
+                                            <th style="vertical-align:central">  New to Master </th>
 
                                             <th style="vertical-align:central; text-align:center">Critical Skills</th>
 
@@ -427,9 +395,21 @@
 
                                         </tr>
                                     </thead>
-                                     
+
                                     <tbody style="text-align:center">
-                                         
+                                        <!--<tr>
+
+                                            <td class="avatar" style="padding: 0px 0px 10px 30px">
+
+                                            </td>
+
+                                            <td>   </td>
+                                            <td>   </td>
+                                            <td>Newbie to Master </td>
+                                            <td >   </td>
+
+
+                                        </tr>-->
                                         <tr>
 
                                             <td class="avatar" style="padding: 0px 0px 10px 30px">
@@ -446,13 +426,156 @@
                                                 </div>
 
                                             </td>
-                                            <td>A </td>
-                                            
+                                            <td class="bs-example" style="vertical-align:middle; text-align:center">
+                                                <p>
+                                                    <div id="myTooltip" data-toggle="tooltip">Details </div>
+                                                </p>
+                                            </td>
+
 
                                         </tr>
-                                        
-                                        
-                                        </tbody>
+
+
+                                        <tr>
+                                            <td class="avatar" style="padding: 0px 0px 10px 30px">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="images/pic2.png" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>  <span class="name">  Kha Ngan</span> </td>
+                                            <td> 4.2 years </td>
+                                            <td>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 62%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">62%</div>
+                                                </div>
+                                            </td>
+                                            <td class="bs-example" style="vertical-align:middle; text-align:center">
+                                                <p>
+                                                    <div id="myTooltip" data-toggle="tooltip">Details </div>
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="avatar" style="padding: 0px 0px 10px 30px">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="images/pic3.png" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>  <span class="name">  Chi Pu</span> </td>
+                                            <td> 2 years </td>
+                                            <td>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="40">40%</div>
+                                                </div>
+                                            </td>
+                                            <td class="bs-example" style="vertical-align:middle; text-align:center">
+                                                <p>
+                                                    <div id="myTooltip" data-toggle="tooltip">Details </div>
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="avatar" style="padding: 0px 0px 10px 30px">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="images/pic4.png" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>  <span class="name">  Yen Dung</span> </td>
+                                            <td> 11 years </td>
+                                            <td>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar bg-danger  progress-bar-striped progress-bar-animated" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="35">35%</div>
+                                                </div>
+                                            </td>
+                                            <td class="bs-example" style="vertical-align:middle; text-align:center">
+                                                <p>
+                                                    <div id="myTooltip" data-toggle="tooltip">Details </div>
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="avatar" style="padding: 0px 0px 10px 30px">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="images/pic5.png" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>  <span class="name">  Bao Anh</span> </td>
+                                            <td> 8.2 years </td>
+                                            <td>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">90%</div>
+                                                </div>
+                                            </td>
+                                            <td class="bs-example" style="vertical-align:middle; text-align:center">
+                                                <p>
+                                                    <div id="myTooltip" data-toggle="tooltip">Details </div>
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="avatar" style="padding: 0px 0px 10px 30px">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="images/pic3.png" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>  <span class="name">  Huynh Thao</span> </td>
+                                            <td> 3 years </td>
+                                            <td>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">70%</div>
+                                                </div>
+                                            </td>
+                                            <td class="bs-example" style="vertical-align:middle; text-align:center">
+                                                <p>
+                                                    <div id="myTooltip" data-toggle="tooltip">Details </div>
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="avatar" style="padding: 0px 0px 10px 30px">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="images/pic7.png" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>  <span class="name">  Huynh Thao</span> </td>
+                                            <td> 8.1 years </td>
+                                            <td>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                                </div>
+                                            </td>
+                                            <td class="bs-example" style="vertical-align:middle; text-align:center">
+                                                <p>
+                                                    <div id="myTooltip" data-toggle="tooltip">Details </div>
+                                                </p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="avatar" style="padding: 0px 0px 10px 30px">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="images/pic1.png" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>  <span class="name">  Kiet Hue</span> </td>
+                                            <td> 4.4 years </td>
+                                            <td>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="85">85%</div>
+                                                </div>
+                                            </td>
+                                            <td class="bs-example" style="vertical-align:middle; text-align:center">
+                                                <p>
+                                                    <div id="myTooltip" data-toggle="tooltip">Details </div>
+                                                </p>
+                                            </td>
+
+                                    </tbody>
                                 </table>
                             </div> <!-- /.table-stats -->
                         </div>
@@ -460,27 +583,44 @@
                     <!--/employees-->
                     <!--Machines-->
                     <div class="col-lg-6">
-                        <div class="card" style="height:500px">
-                            
-						<div class="card-header" style="text-align:center">
+                        <div class="card" style="height:700px">
+                            <div class="card-header" style="text-align:center;background-color:#404040; color:white">
                                 <strong class="card-title">
-                                    Chart
+                                    Worker Capability Tracking
                                 </strong>
-                            </div>	
-							
-<div style="width: 75%">
-		<canvas id="canvas"></canvas>
-	</div>
 
 
+                            </div>
 
+                            <div class="row"> 
+                                    <div class="card-body">
+                                             <canvas id="sales-chart"  style="width: 370px; height: 270px"></canvas>
+                                     </div>
+                                    <div class="card-body">
+
+                                        <div class="col-12 row">
+                                            <div id="chartContainer" style="width:350px; height:300px "></div>
+
+                                        </div>
+                                        <div class="col-md-8" style="width:300px; height:300px; left:370px; top:-320px ">
+                                            <div class="col-md-12" style="margin-top:30px; margin-bottom:-50px "> <strong> Machine Errors Events</strong></div>
+                                            <div id="graph_donut"></div>
+                                        </div>
+                                       
+
+                                    </div>
+                                    
+                               
+
+                            </div> <!-- /.row -->
+                            <div class="card-body"></div>
                         </div>
                     </div>
                     <!--/Machines-->
                 </div>
             </div>
             <!-- .animated -->
-        
+
         </div>
         <!-- /.content -->
         <div class="clearfix"></div>
@@ -524,286 +664,869 @@
     <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
     <script src="assets/js/init/fullcalendar-init.js"></script>
-
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <!--Local Stuff-->
+
     <script>
-        jQuery(document).ready(function ($) {
-            "use strict";
-
-            // Pie chart flotPie1
-            var piedata = [
-                { label: "Desktop visits", data: [[1, 32]], color: '#5c6bc0' },
-                { label: "Tab visits", data: [[1, 33]], color: '#ef5350' },
-                { label: "Mobile visits", data: [[1, 35]], color: '#66bb6a' }
-            ];
-
-            $.plot('#flotPie1', piedata, {
-                series: {
-                    pie: {
-                        show: true,
-                        radius: 1,
-                        innerRadius: 0.65,
-                        label: {
-                            show: true,
-                            radius: 2 / 3,
-                            threshold: 1
-                        },
-                        stroke: {
-                            width: 0
-                        }
-                    }
-                },
-                grid: {
-                    hoverable: true,
-                    clickable: true
-                }
-            });
-            // Pie chart flotPie1  End
-            // cellPaiChart
-            var cellPaiChart = [
-                { label: "Direct Sell", data: [[1, 65]], color: '#5b83de' },
-                { label: "Channel Sell", data: [[1, 35]], color: '#00bfa5' }
-            ];
-            $.plot('#cellPaiChart', cellPaiChart, {
-                series: {
-                    pie: {
-                        show: true,
-                        stroke: {
-                            width: 0
-                        }
-                    }
-                },
-                legend: {
-                    show: false
-                }, grid: {
-                    hoverable: true,
-                    clickable: true
-                }
-
-            });
-            // cellPaiChart End
-            // Line Chart  #flotLine5
-            var newCust = [[0, 3], [1, 5], [2, 4], [3, 7], [4, 9], [5, 3], [6, 6], [7, 4], [8, 10]];
-
-            var plot = $.plot($('#flotLine5'), [{
-                data: newCust,
-                label: 'New Data Flow',
-                color: '#fff'
-            }],
-                {
-                    series: {
-                        lines: {
-                            show: true,
-                            lineColor: '#fff',
-                            lineWidth: 2
-                        },
-                        points: {
-                            show: true,
-                            fill: true,
-                            fillColor: "#ffffff",
-                            symbol: "circle",
-                            radius: 3
-                        },
-                        shadowSize: 0
-                    },
-                    points: {
-                        show: true,
-                    },
-                    legend: {
-                        show: false
-                    },
-                    grid: {
-                        show: false
-                    }
-                });
-            // Line Chart  #flotLine5 End
-            // Traffic Chart using chartist
-            if ($('#traffic-chart').length) {
-                var chart = new Chartist.Line('#traffic-chart', {
-                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                    series: [
-                        [0, 18000, 35000, 25000, 22000, 0],
-                        [0, 33000, 15000, 20000, 15000, 300],
-                        [0, 15000, 28000, 15000, 30000, 5000]
-                    ]
-                }, {
-                        low: 0,
-                        showArea: true,
-                        showLine: false,
-                        showPoint: false,
-                        fullWidth: true,
-                        axisX: {
-                            showGrid: true
-                        }
-                    });
-
-                chart.on('draw', function (data) {
-                    if (data.type === 'line' || data.type === 'area') {
-                        data.element.animate({
-                            d: {
-                                begin: 2000 * data.index,
-                                dur: 2000,
-                                from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
-                                to: data.path.clone().stringify(),
-                                easing: Chartist.Svg.Easing.easeOutQuint
-                            }
-                        });
-                    }
-                });
-            }
-            // Traffic Chart using chartist End
-            //Traffic chart chart-js
-            if ($('#TrafficChart').length) {
-                var ctx = document.getElementById("TrafficChart");
-                ctx.height = 150;
-                var myChart = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-                        datasets: [
-                            {
-                                label: "Visit",
-                                borderColor: "rgba(4, 73, 203,.09)",
-                                borderWidth: "1",
-                                backgroundColor: "rgba(4, 73, 203,.5)",
-                                data: [0, 2900, 5000, 3300, 6000, 3250, 0]
-                            },
-                            {
-                                label: "Bounce",
-                                borderColor: "rgba(245, 23, 66, 0.9)",
-                                borderWidth: "1",
-                                backgroundColor: "rgba(245, 23, 66,.5)",
-                                pointHighlightStroke: "rgba(245, 23, 66,.5)",
-                                data: [0, 4200, 4500, 1600, 4200, 1500, 4000]
-                            },
-                            {
-                                label: "Targeted",
-                                borderColor: "rgba(40, 169, 46, 0.9)",
-                                borderWidth: "1",
-                                backgroundColor: "rgba(40, 169, 46, .5)",
-                                pointHighlightStroke: "rgba(40, 169, 46,.5)",
-                                data: [1000, 5200, 3600, 2600, 4200, 5300, 0]
-                            }
-                        ]
-                    },
-                    options: {
-                        responsive: true,
-                        tooltips: {
-                            mode: 'index',
-                            intersect: false
-                        },
-                        hover: {
-                            mode: 'nearest',
-                            intersect: true
-                        }
-
-                    }
-                });
-            }
-            //Traffic chart chart-js  End
-            // Bar Chart #flotBarChart
-            $.plot("#flotBarChart", [{
-                data: [[0, 18], [2, 8], [4, 5], [6, 13], [8, 5], [10, 7], [12, 4], [14, 6], [16, 15], [18, 9], [20, 17], [22, 7], [24, 4], [26, 9], [28, 11]],
-                bars: {
-                    show: true,
-                    lineWidth: 0,
-                    fillColor: '#ffffff8a'
-                }
-            }], {
-                    grid: {
-                        show: false
-                    }
-                });
-            // Bar Chart #flotBarChart End
-        });
-    </script>
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script>
         $(document).ready(function () {
             $("#myTooltip").tooltip({
-                title: "dsdasd",
+                title: "<img src='images/11.png' width:'5000px' alt='Smiley'>",
                 html: true,
             });
         });
     </script>
-	<script>
-		var chartData = {
-			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-			datasets: [{
-				type: 'line',
-				label: 'Dataset 1',
-				borderColor: window.chartColors.blue,
-				borderWidth: 2,
-				fill: false,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}, {
-				type: 'bar',
-				label: 'Dataset 2',
-				backgroundColor: window.chartColors.red,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				],
-				borderColor: 'white',
-				borderWidth: 2
-			}, {
-				type: 'bar',
-				label: 'Dataset 3',
-				backgroundColor: window.chartColors.green,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}]
 
-		};
-		window.onload = function() {
-			var ctx = document.getElementById('canvas').getContext('2d');
-			window.myMixedChart = new Chart(ctx, {
-				type: 'bar',
-				data: chartData,
-				options: {
-					responsive: true,
-					title: {
-						display: true,
-						text: 'Chart.js'
-					},
-					tooltips: {
-						mode: 'index',
-						intersect: true
-					}
-				}
-			});
-		};
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#bootstrap-data-table-export').DataTable();
+        });
 
-		document.getElementById('randomizeData').addEventListener('click', function() {
-			chartData.datasets.forEach(function(dataset) {
-				dataset.data = dataset.data.map(function() {
-					return randomScalingFactor();
-				});
-			});
-			window.myMixedChart.update();
-		});
-	</script>
+
+    </script>
+
+    <script>
+
+        (function ($, sr) {
+            // debouncing function from John Hann
+            // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+            var debounce = function (func, threshold, execAsap) {
+                var timeout;
+
+                return function debounced() {
+                    var obj = this, args = arguments;
+                    function delayed() {
+                        if (!execAsap)
+                            func.apply(obj, args);
+                        timeout = null;
+                    }
+
+                    if (timeout)
+                        clearTimeout(timeout);
+                    else if (execAsap)
+                        func.apply(obj, args);
+
+                    timeout = setTimeout(delayed, threshold || 100);
+                };
+            };
+
+            // smartresize
+            jQuery.fn[sr] = function (fn) { return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+
+        })(jQuery, 'smartresize');
+        /* ECHRTS */
+
+        function init_echarts() {
+
+            if (typeof (echarts) === 'undefined') { return; }
+            console.log('init_echarts');
+
+
+            var theme = {
+                color: [
+                    '#FFF', '#26B99A', '#34495E', '#BDC3C7', '#3498DB',
+                    '#9B59B6', '#8abb6f', '#759c6a', '#bfd3b7'
+                ],
+
+                title: {
+                    itemGap: 3,
+                    textStyle: {
+                        fontWeight: 'normal',
+                        color: '#408829'
+                    }
+                },
+
+                dataRange: {
+                    color: ['#1f610a', '#97b58d']
+                },
+
+                toolbox: {
+                    color: ['#408829', '#408829', '#408829', '#408829']
+                },
+
+                tooltip: {
+                    backgroundColor: 'rgba(0,0,0,0.5)',
+                    axisPointer: {
+                        type: 'line',
+                        lineStyle: {
+                            color: '#408829',
+                            type: 'dashed'
+                        },
+                        crossStyle: {
+                            color: '#408829'
+                        },
+                        shadowStyle: {
+                            color: 'rgba(200,200,200,0.3)'
+                        }
+                    }
+                },
+
+                dataZoom: {
+                    dataBackgroundColor: '#eee',
+                    fillerColor: 'rgba(64,136,41,0.2)',
+                    handleColor: '#408829'
+                },
+                grid: {
+                    borderWidth: 0
+                },
+
+                categoryAxis: {
+                    axisLine: {
+                        lineStyle: {
+                            color: '#408829'
+                        }
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: ['#eee']
+                        }
+                    }
+                },
+
+                valueAxis: {
+                    axisLine: {
+                        lineStyle: {
+                            color: '#408829'
+                        }
+                    },
+                    splitArea: {
+                        show: true,
+                        areaStyle: {
+                            color: ['rgba(250,250,250,0.1)', 'rgba(200,200,200,0.1)']
+                        }
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: ['#eee']
+                        }
+                    }
+                },
+                timeline: {
+                    lineStyle: {
+                        color: '#408829'
+                    },
+                    controlStyle: {
+                        normal: { color: '#408829' },
+                        emphasis: { color: '#408829' }
+                    }
+                },
+
+                k: {
+                    itemStyle: {
+                        normal: {
+                            color: '#68a54a',
+                            color0: '#a9cba2',
+                            lineStyle: {
+                                width: 1,
+                                color: '#408829',
+                                color0: '#86b379'
+                            }
+                        }
+                    }
+                },
+                map: {
+                    itemStyle: {
+                        normal: {
+                            areaStyle: {
+                                color: '#ddd'
+                            },
+                            label: {
+                                textStyle: {
+                                    color: '#c12e34'
+                                }
+                            }
+                        },
+                        emphasis: {
+                            areaStyle: {
+                                color: '#99d2dd'
+                            },
+                            label: {
+                                textStyle: {
+                                    color: '#c12e34'
+                                }
+                            }
+                        }
+                    }
+                },
+                force: {
+                    itemStyle: {
+                        normal: {
+                            linkStyle: {
+                                strokeColor: '#408829'
+                            }
+                        }
+                    }
+                },
+                chord: {
+                    padding: 4,
+                    itemStyle: {
+                        normal: {
+                            lineStyle: {
+                                width: 1,
+                                color: 'rgba(128, 128, 128, 0.5)'
+                            },
+                            chordStyle: {
+                                lineStyle: {
+                                    width: 1,
+                                    color: 'rgba(128, 128, 128, 0.5)'
+                                }
+                            }
+                        },
+                        emphasis: {
+                            lineStyle: {
+                                width: 1,
+                                color: 'rgba(128, 128, 128, 0.5)'
+                            },
+                            chordStyle: {
+                                lineStyle: {
+                                    width: 1,
+                                    color: 'rgba(128, 128, 128, 0.5)'
+                                }
+                            }
+                        }
+                    }
+                },
+                gauge: {
+                    startAngle: 100,
+                    endAngle: 0,
+                    axisLine: {
+                        show: true,
+                        lineStyle: {
+                            color: [[0.2, '#86b379'], [0.8, '#68a54a'], [1, '#408829']],
+                            width: 4
+                        }
+                    },
+                    axisTick: {
+                        splitNumber: 40,
+                        length: 12,
+                        lineStyle: {
+                            color: 'auto'
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            color: 'auto'
+                        }
+                    },
+                    splitLine: {
+                        length: 18,
+                        lineStyle: {
+                            color: 'auto'
+                        }
+                    },
+                    pointer: {
+                        length: '90%',
+                        color: 'auto'
+                    },
+                    title: {
+                        textStyle: {
+                            color: '#333'
+                        }
+                    },
+                    detail: {
+                        textStyle: {
+                            color: 'auto'
+                        }
+                    }
+                },
+                textStyle: {
+                    fontFamily: 'Arial, Verdana, sans-serif'
+                }
+            };
+
+
+            //echart Scatter
+
+            if ($('#echart_scatter').length) {
+
+                var echartScatter = echarts.init(document.getElementById('echart_scatter'), theme);
+
+                echartScatter.setOption({
+                    title: {
+
+                        subtext: '    RFT%'
+                    },
+                    tooltip: {
+                        trigger: 'axis',
+                        showDelay: 0,
+                        axisPointer: {
+                            type: 'cross',
+                            lineStyle: {
+                                type: 'dashed',
+                                width: 1
+                            }
+                        }
+                    },
+                    legend: {
+                        data: ['5C', '5F', '5D', '3F', '2B', '2G', '3A', '4G']
+                    },
+                    toolbox: {
+                        show: true,
+                        feature: {
+                            saveAsImage: {
+                                show: true,
+                                title: "Save Image"
+                            }
+                        }
+                    },
+                    xAxis: [{
+                        type: 'value',
+
+                        scale: true,
+                        axisLabel: {
+                            formatter: '{value} %',
+
+                        }
+                    }],
+                    yAxis: [{
+
+                        type: 'value',
+                        scale: true,
+                        axisLabel: {
+                            formatter: '{value} %'
+                        }
+                    }],
+                    series: [
+                        {
+                            name: 'Data1',
+                            type: 'scatter',
+                            tooltip: {
+                                trigger: 'item',
+                                formatter: function (params) {
+                                    if (params.value.length > 1) {
+                                        return params.seriesName + ' :<br/>' + params.value[0] + '% ' + params.value[1] + '% ';
+                                    } else {
+                                        return params.seriesName + ' :<br/>' + params.name + ' : ' + params.value + '% ';
+                                    }
+                                }
+                            },
+                            data: [
+
+                                [0, 0],
+
+
+                            ],
+
+
+                        },
+                        {
+                            name: '5F',
+                            type: 'scatter',
+                            tooltip: {
+                                trigger: 'item',
+                                formatter: function (params) {
+                                    if (params.value.length > 1) {
+                                        return params.seriesName + ' :<br />' + params.value[0] + '% ' + params.value[1] + '% ';
+                                    } else {
+                                        return params.seriesName + ' :<br />' + params.name + ' : ' + params.value + '% ';
+                                    }
+                                }
+                            },
+                            data: [
+                                [29, 35],
+
+
+                            ],
+                            markPoint: {
+                                data: [{
+                                    type: 'max',
+                                    name: 'Max'
+                                }, {
+                                    type: 'min',
+                                    name: 'Min'
+                                }]
+                            },
+
+                        },
+                        {
+                            name: '5D',
+                            type: 'scatter',
+                            tooltip: {
+                                trigger: 'item',
+                                formatter: function (params) {
+                                    if (params.value.length > 1) {
+                                        return 'Line:' + params.seriesName + '<br />' + 'PHH:0.64' + '<br />' + 'EFF:' + params.value[0] + '% ' + '<br />' + 'RFT' + params.value[1] + '% ';
+                                    } else {
+                                        return params.seriesName + ' :<br />' + params.name + ' : ' + params.value + '% ';
+                                    }
+                                }
+                            },
+                            data: [
+                                [54, 65],
+
+
+                            ],
+                            markPoint: {
+                                data: [{
+                                    type: 'max',
+                                    name: 'Max'
+                                }, {
+                                    type: 'min',
+                                    name: 'Min'
+                                }]
+                            },
+
+                        },
+                        {
+                            name: '3F',
+                            type: 'scatter',
+                            tooltip: {
+                                trigger: 'item',
+                                formatter: function (params) {
+                                    if (params.value.length > 1) {
+                                        return 'Line:' + params.seriesName + '<br />' + 'PHH:0.64' + '<br />' + 'EFF:' + params.value[0] + '% ' + '<br />' + 'RFT' + params.value[1] + '% ';
+                                    } else {
+                                        return params.seriesName + ' :<br />' + params.name + ' : ' + params.value + '% ';
+                                    }
+                                }
+                            },
+                            data: [
+                                [70, 30],
+
+
+                            ],
+                            markPoint: {
+                                data: [{
+                                    type: 'max',
+                                    name: 'Max'
+                                }, {
+                                    type: 'min',
+                                    name: 'Min'
+                                }]
+                            },
+
+                        },
+
+                        {
+                            name: '2B',
+                            type: 'scatter',
+                            tooltip: {
+                                trigger: 'item',
+                                formatter: function (params) {
+                                    if (params.value.length > 1) {
+                                        return 'Line:' + params.seriesName + '<br />' + 'PHH:0.64' + '<br />' + 'EFF:' + params.value[0] + '% ' + '<br />' + 'RFT' + params.value[1] + '% ';
+                                    } else {
+                                        return params.seriesName + ' :<br />' + params.name + ' : ' + params.value + '% ';
+                                    }
+                                }
+                            },
+                            data: [
+                                [80, 88],
+
+
+                            ],
+                            markPoint: {
+                                data: [{
+                                    type: 'max',
+                                    name: 'Max'
+                                }, {
+                                    type: 'min',
+                                    name: 'Min'
+                                }]
+                            },
+
+                        },
+                        {
+                            name: '2A',
+                            type: 'scatter',
+                            tooltip: {
+                                trigger: 'item',
+                                formatter: function (params) {
+                                    if (params.value.length > 1) {
+                                        return params.seriesName + ' :<br />' + params.value[0] + '% ' + params.value[1] + '% ';
+                                    } else {
+                                        return params.seriesName + ' :<br />' + params.name + ' : ' + params.value + '% ';
+                                    }
+                                }
+                            },
+                            data: [
+                                [96, 93],
+
+
+                            ],
+                            markPoint: {
+                                data: [{
+                                    type: 'max',
+                                    name: 'Max'
+                                }, {
+                                    type: 'min',
+                                    name: 'Min'
+                                }]
+                            },
+
+                        },
+                        {
+                            name: '3A',
+                            type: 'scatter',
+                            tooltip: {
+                                trigger: 'item',
+                                formatter: function (params) {
+                                    if (params.value.length > 1) {
+                                        return 'Line:' + params.seriesName + '<br />' + 'PHH:0.64' + '<br />' + 'EFF:' + params.value[0] + '% ' + '<br />' + 'RFT' + params.value[1] + '% ';
+                                    } else {
+                                        return params.seriesName + ' :<br />' + params.name + ' : ' + params.value + '% ';
+                                    }
+                                }
+                            },
+                            data: [
+                                [98, 59],
+
+
+                            ],
+                            markPoint: {
+                                data: [{
+                                    type: 'max',
+                                    name: 'Max'
+                                }, {
+                                    type: 'min',
+                                    name: 'Min'
+                                }]
+                            },
+
+                        },
+                        {
+                            name: '4G',
+                            type: 'scatter',
+                            tooltip: {
+                                trigger: 'item',
+                                formatter: function (params) {
+                                    if (params.value.length > 1) {
+                                        return 'Line:' + params.seriesName + '<br />' + 'PHH:0.64' + '<br />' + 'EFF:' + params.value[0] + '% ' + '<br />' + 'RFT' + params.value[1] + '% ';
+                                    } else {
+                                        return params.seriesName + ' :<br />' + params.name + ' : ' + params.value + '% ';
+                                    }
+                                }
+                            },
+                            data: [
+                                [70, 70],
+
+
+                            ],
+                            markPoint: {
+                                data: [{
+                                    type: 'max',
+                                    name: 'Max'
+                                }, {
+                                    type: 'name',
+                                    name: '3D'
+                                }]
+                            },
+
+                        },
+                        {
+                            name: '5C',
+                            type: 'scatter',
+                            tooltip: {
+                                trigger: 'item',
+                                title: "<img src='~/images/picture1.png' width:'5000px' alt='Smiley'>",
+
+                                formatter: function (params) {
+
+                                    if (params.value.length > 1) {
+                                        return 'Line:' + params.seriesName + '<br />' + 'PHH:0.64' + '<br />' + 'EFF:' + params.value[0] + '% ' + '<br />' + 'RFT' + params.value[1] + '% ';
+                                    } else {
+                                        return params.seriesName + ' :<br />' + params.name + ' : ' + params.value + '% ';
+                                    }
+                                }
+                            },
+                            data: [
+                                [45, 50],
+
+
+                            ],
+                            markPoint: {
+                                data: [{
+                                    type: 'max',
+                                    name: 'Max'
+                                }, {
+                                    type: 'name',
+                                    name: '3D'
+                                }]
+
+                            },
+
+                        },
+                    ]
+                });
+
+            }
+
+
+
+        };
+
+        function init_morris_charts() {
+
+            if (typeof (Morris) === 'undefined') { return; }
+            console.log('init_morris_charts');
+
+            if ($('#graphx').length) {
+
+                Morris.Bar({
+                    element: 'graphx',
+                    data: [
+                        { x: 'FW6385', y: 63.5, z: 90.4, a: 100 },
+                        { x: 'FV3288', y: 80.9, z: 89.6, a: 100 },
+                        { x: 'EE5036', y: 90.1, z: 89.3, a: 100 },
+                    ],
+                    xkey: 'x',
+                    ykeys: ['y', 'z', 'a'],
+                    barColors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
+                    hideHover: 'auto',
+                    labels: ['Availability', 'Performance', 'Quality'],
+                    resize: true
+                }).on('click', function (i, row) {
+                    console.log(i, row);
+                });
+                if ($('#graph_line').length) {
+
+                    Morris.Line({
+                        element: 'graph_line',
+                        type: "Line",
+
+                        data: [
+                            { year: '2012', value: 20 },
+                            { year: '2013', value: 10 },
+                            { year: '2014', value: 5 },
+                            { year: '2015', value: 5 },
+                            { year: '2016', value: 20 }
+                        ],
+                        resize: true
+                    });
+
+                    $MENU_TOGGLE.on('click', function () {
+                        $(window).resize();
+                    });
+
+                }
+
+            }
+
+
+
+
+        };
+
+
+        function init_morris_charts() {
+
+            if (typeof (Morris) === 'undefined') { return; }
+            console.log('init_morris_charts');
+
+            if ($('#graph_donut').length) {
+
+                Morris.Donut({
+                    element: 'graph_donut',
+                    data: [
+                        { label: 'Shorted of workers', value: 40.5 },
+                        { label: 'Line balance', value: 8.1 },
+                        { label: 'M Breakdown', value: 27.0},
+                        { label: 'Model change over', value: 10.8 },
+                        { label: 'Quality issue', value: 10.8 },
+                           { label: 'Others', value: 10.8 }
+                    ],
+                    colors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB', '#759c6a', '#3498DB'],
+                    formatter: function (y) {
+                        return y + "%";
+                    },
+                    resize: true
+                });
+
+            }
+
+
+        };
+
+        $(document).ready(function () {
+
+            init_echarts();
+
+            init_morris_charts();
+
+
+
+        });
+
+
+
+    </script>
+    <script>
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer",
+                {
+                    title: {
+                        text: "OEE Chart "
+
+                    },
+                  
+                    data: [{
+                        type: "column",
+                        dataPoints: [
+                            { x: 20, y: 63.5 },
+                            { x: 40, y: 80.9 },
+                            { x: 60, y: 90.1 }  
+                            
+                        ]
+                    }, {
+                        type: "column",
+                        dataPoints: [
+                            { x: 20, y: 90.4 },
+                            { x: 40, y: 89.6 },
+                            { x: 60, y: 89.3 } 
+                        ]
+                        }, {
+                            type: "column",
+                            dataPoints: [
+                                { x: 20, y: 100 },
+                                { x: 40, y: 100},
+                                { x: 60, y: 100 } 
+                            ]
+                        },
+
+                    {
+                        type: "line",
+                        dataPoints: [
+                            { x: 20, y: 59 },
+                            { x: 40, y: 72.5 },
+                            { x: 60, y: 80.4 } 
+                            
+                        ]
+                    },
+                    
+                    ]
+                });
+
+            chart.render();
+        }
+    </script>
+ <script>
+            (function ($) {
+                "use strict";
+
+                //Sales chart
+                var ctx = document.getElementById("sales-chart");
+                ctx.height = 150;
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug","Sep","Oct","Nov","Dec"],
+                        type: 'line',
+                        defaultFontFamily: 'Montserrat',
+                        datasets: [{
+                            label: "Downtime",
+                            data: [20, 50, 65, 33, 10, 7, 42,55,80,19,20,21],
+                            backgroundColor: 'transparent',
+                            borderColor: 'rgba(220,53,69,0.75)',
+                            borderWidth: 3,
+                            pointStyle: 'circle',
+                            pointRadius: 5,
+                            pointBorderColor: 'transparent',
+                            pointBackgroundColor: 'rgba(220,53,69,0.75)',
+                        }, {
+                            label: "COT",
+                            data: [5,4,4,2,1,5,4,2,3,4,3,3],
+                            backgroundColor: 'transparent',
+                            borderColor: 'rgba(40,167,69,0.75)',
+                            borderWidth: 3,
+                            pointStyle: 'circle',
+                            pointRadius: 5,
+                            pointBorderColor: 'transparent',
+                            pointBackgroundColor: 'rgba(40,167,69,0.75)',
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+
+                        tooltips: {
+                            mode: 'index',
+                            titleFontSize: 12,
+                            titleFontColor: '#000',
+                            bodyFontColor: '#000',
+                            backgroundColor: '#fff',
+                            titleFontFamily: 'Montserrat',
+                            bodyFontFamily: 'Montserrat',
+                            cornerRadius: 3,
+                            intersect: false,
+                        },
+                        legend: {
+                            display: false,
+                            labels: {
+                                usePointStyle: true,
+                                fontFamily: 'Montserrat',
+                            },
+                        },
+                        scales: {
+                            xAxes: [{
+                                display: true,
+                                gridLines: {
+                                    display: false,
+                                    drawBorder: false
+                                },
+                                scaleLabel: {
+                                    display: false,
+                                    labelString: 'Month'
+                                }
+                            }],
+                            yAxes: [{
+                                display: true,
+                                gridLines: {
+                                    display: false,
+                                    drawBorder: false
+                                },
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'Value'
+                                }
+                            }]
+                        },
+                        title: {
+                            display: false,
+                            text: 'Normal Legend'
+                        }
+                    }
+                });
+
+
+            })(jQuery);
+ </script>
+
+
+    <script src="assets/js/lib/data-table/buttons.bootstrap.min.js"></script>
+    <script src="assets/js/lib/data-table/jszip.min.js"></script>
+    <script src="assets/js/lib/data-table/vfs_fonts.js"></script>
+    <script src="assets/js/lib/data-table/buttons.html5.min.js"></script>
+    <script src="assets/js/lib/data-table/buttons.print.min.js"></script>
+    <script src="assets/js/lib/data-table/buttons.colVis.min.js"></script>
+    <script src="assets/js/init/datatables-init.js"></script>
+    <script src="gentelella-master/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="gentelella-master/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="gentelella-master/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="gentelella-master/vendors/nprogress/nprogress.js"></script>
+    <!-- ECharts -->
+    <script src="gentelella-master/vendors/echarts/dist/echarts.min.js"></script>
+    <script src="gentelella-master/vendors/echarts/map/js/world.js"></script>
+    <script src="gentelella-master/vendors/vendors/raphael/raphael.min.js"></script>
+    <script src="gentelella-master/vendors/vendors/morris.js/morris.min.js"></script>
+    <!-- jQuery -->
+    <script src="gentelella-master/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="gentelella-master/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="gentelella-master/vendors/fastclick/lib/fastclick.js"></script>
+    <script src="gentelella-master/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="gentelella-master/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="gentelella-master/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="gentelella-master/vendors/nprogress/nprogress.js"></script>
+    <!-- morris.js -->
+    <script src="gentelella-master/vendors/raphael/raphael.min.js"></script>
+    <script src="gentelella-master/vendors/morris.js/morris.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
 </body>
 </html>
-
